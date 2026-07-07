@@ -16,12 +16,6 @@ The following changes adapt the product for Turkish law firms specifically (as o
 - **Tabular review creation UX** (`frontend/src/app/components/tabular/AddNewTRModal.tsx`) — added inline hints explaining why the "Oluştur" (Create) button is disabled (missing title / missing selected project), since neither previously had any visible validation message.
 - **Credits-exhausted modal** (`frontend/src/app/components/modals/credits-exhausted-modal.tsx`) — this component had been missed during Turkish localization; translated it in full and fixed its date formatting from `en-US` to `tr-TR`.
 
-### License and branding compliance pass — 2026-07-02
-
-- Removed leftover `mikeoss.com` references pointing at the upstream project's own domain (`frontend/src/components/site-logo.tsx`, `frontend/src/app/layout.tsx`, `frontend/src/app/signup/page.tsx`, `frontend/src/app/support/page.tsx`) and replaced them with relative paths / configurable env vars / neutral placeholders.
-- Renamed the npm packages from `mike` / `mike-backend` to `rapidact-frontend` / `rapidact-backend` (`frontend/package.json`, `backend/package.json`); both already correctly declared `"license": "AGPL-3.0-only"`.
-- Added an in-app "Kaynak Kod" (Source Code) link (`frontend/src/app/components/shared/AppSidebar.tsx`) to satisfy AGPL-3.0 §13 — configurable via `NEXT_PUBLIC_SOURCE_REPO_URL`.
-
 ### Earlier changes (product rebrand, localization, and Turkish-market adaptation)
 
 The rest of this fork's ~90 remaining changed files predate the Turkish-legal-practice work above. Summarized by theme:
